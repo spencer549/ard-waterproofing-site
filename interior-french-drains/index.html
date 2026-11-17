@@ -1615,6 +1615,209 @@ body .design .sfoot{background:#000c22;border-top:3px solid var(--cyan);box-shad
 #design-c .postg>*{min-width:0}
 #design-c .prose{overflow-wrap:break-word}
 
+
+/* ===== client feedback round 2026-11-17: new furniture on the approved tokens ===== */
+#design-c .fx-draft{display:inline-block;margin:0 0 var(--s4);padding:8px 14px;border-left:4px solid var(--gold);
+  background:#FFF7DD;color:#5A4300;font-family:var(--head);font-weight:600;font-size:var(--t-xs);border-radius:0 6px 6px 0}
+#design-c .on-dark .fx-draft{background:#33290A;color:#FFE08A}
+#design-c .fx-tbc{font-style:normal;color:#8A5A00;background:#FFF7DD;padding:1px 8px;border-radius:4px;font-size:var(--t-sm);font-weight:600}
+
+/* --- system diagram --- */
+#design-c .fx-sys{background:var(--navy-900)}
+#design-c .fx-sysg{display:grid;gap:var(--s5)}
+#design-c .fx-dia{background:#04204D;border:1px solid #1D3F78;border-radius:var(--r-lg);padding:var(--s4);max-width:900px;margin-inline:auto;width:100%}
+#design-c .fx-dia svg{display:block;width:100%;height:auto}
+#design-c .fx-dia text{font-family:var(--head);font-weight:700}
+#design-c .fx-dia .g{transition:opacity 200ms var(--ease-out)}
+#design-c .fx-dia.has-on .g:not(.on){opacity:.3}
+#design-c .fx-mk{cursor:pointer}
+#design-c .fx-mk circle{fill:#001840;stroke:#00B0F0;stroke-width:2;transition:fill 160ms var(--ease-out)}
+#design-c .fx-mk.on circle{fill:#00B0F0}
+#design-c .fx-mk text{fill:#fff;font-size:13px}
+#design-c .fx-mk.on text{fill:#001840}
+#design-c .fx-flow{fill:none;stroke:#00B0F0;stroke-width:3;stroke-linecap:round;stroke-dasharray:3 13;animation:fxflow 1.5s linear infinite}
+@keyframes fxflow{to{stroke-dashoffset:-32}}
+@media (prefers-reduced-motion:reduce){html:not([data-motion="force"]) #design-c .fx-flow{animation-duration:6s}}
+#design-c .fx-parts{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:1fr 1fr;grid-template-rows:repeat(5,auto);grid-auto-flow:column;gap:6px var(--s6)}
+#design-c .fx-part{display:grid;grid-template-columns:34px 1fr;gap:14px;align-items:start;width:100%;text-align:left;
+  background:none;border:0;border-left:3px solid #1D3F78;padding:9px 14px;cursor:pointer;color:var(--on-dark-2);
+  font:inherit;border-radius:0 var(--r-sm) var(--r-sm) 0;transition:background-color 160ms var(--ease-out),border-color 160ms var(--ease-out)}
+#design-c .fx-part .n{width:30px;height:30px;border-radius:50%;border:2px solid #00B0F0;color:#fff;display:grid;place-items:center;
+  font-family:var(--head);font-weight:700;font-size:var(--t-xs);transition:background-color 160ms var(--ease-out),color 160ms var(--ease-out)}
+#design-c .fx-part b{display:block;font-family:var(--head);font-weight:700;color:#fff;font-size:var(--t-base);line-height:1.3}
+#design-c .fx-part span.d{display:block;font-size:var(--t-sm);line-height:1.5;margin-top:2px}
+#design-c .fx-part.on{background:#062A5C;border-left-color:#00B0F0}
+#design-c .fx-part.on .n{background:#00B0F0;color:#001840}
+#design-c .fx-part:focus-visible{outline:2px solid #00B0F0;outline-offset:2px}
+#design-c .fx-part i{font-style:normal;font-family:var(--head);font-weight:700;font-size:var(--t-xs);color:var(--cyan-lite);margin-left:8px}
+#design-c .fx-sysfoot{margin-top:var(--s3);display:flex;flex-wrap:wrap;gap:var(--s3) var(--s4);align-items:center;justify-content:space-between;
+  border-left:3px solid #00B0F0;padding:6px 0 6px var(--s3)}
+#design-c .fx-sysfoot p{margin:0;flex:1 1 300px;color:var(--on-dark-2);font-size:var(--t-base)}
+
+/* --- price ledger --- */
+#design-c .fx-costg{display:grid;grid-template-columns:minmax(0,7fr) minmax(0,5fr);gap:var(--s7);align-items:start}
+#design-c .fx-costg .shead{margin-bottom:var(--s5);text-align:left;max-width:none}
+#design-c .fx-ledger{list-style:none;margin:0;padding:0;border-top:2px solid var(--navy-900)}
+#design-c .fx-ledger li{display:flex;justify-content:space-between;align-items:baseline;gap:var(--s4);padding:18px 0;border-bottom:1px solid var(--line)}
+#design-c .fx-ledger .w{font-family:var(--head);font-weight:700;color:var(--ink);font-size:var(--t-base)}
+#design-c .fx-ledger .w small{display:block;font-family:var(--text);font-weight:400;color:var(--muted);font-size:var(--t-sm);margin-top:2px}
+#design-c .fx-ledger .p{font-family:var(--head);font-weight:800;color:var(--navy-900);font-size:var(--t-2xl);white-space:nowrap;text-align:right;line-height:1.1}
+#design-c .fx-ledger .p small{display:block;font-weight:600;font-size:var(--t-xs);color:var(--muted);margin-top:4px}
+#design-c .fx-ledger .p u{text-decoration:none;font-size:var(--t-sm);font-weight:600;color:var(--muted);margin-right:6px}
+#design-c .fx-note{font-size:var(--t-sm);color:var(--muted);margin:var(--s4) 0 var(--s5)}
+#design-c .fx-cost .fx-costg{align-items:stretch}
+#design-c .fx-cost .fx-back{display:flex;flex-direction:column;justify-content:center;align-items:flex-start}
+#design-c .fx-back{background:var(--navy-900);color:var(--on-dark-2);border-radius:var(--r-lg);padding:var(--s6) var(--s5);box-shadow:var(--shadow-3)}
+#design-c .fx-back h3{color:#fff;font-size:var(--t-2xl);margin:0 0 var(--s3)}
+#design-c .fx-back h3 em{font-style:normal;color:var(--cyan)}
+#design-c .fx-back p{margin:0 0 var(--s3);font-size:var(--t-base)}
+#design-c .fx-back a.tl{color:#fff;font-family:var(--head);font-weight:700;text-decoration:underline;text-underline-offset:4px}
+#design-c .fx-back hr{width:100%;border:0;border-top:1px solid #1D3F78;margin:var(--s5) 0}
+#design-c .fx-back h4{color:#fff;font-size:var(--t-lg);margin:0 0 8px}
+
+/* --- financing strip --- */
+#design-c .fx-fin{background:var(--mist);border-top:1px solid var(--line);border-bottom:1px solid var(--line);padding:var(--s6) 0}
+#design-c .fx-fin .wrap{display:flex;flex-wrap:wrap;gap:var(--s4) var(--s6);align-items:center;justify-content:space-between}
+#design-c .fx-fin h2{font-size:var(--t-xl);margin:0 0 6px}
+#design-c .fx-fin p{margin:0;max-width:62ch;color:var(--body)}
+
+/* --- pricing page: factors, estimator, checklist --- */
+#design-c .fx-factors{list-style:none;margin:var(--s5) 0 0;padding:0;columns:2;column-gap:var(--s6)}
+#design-c .fx-factors li{break-inside:avoid;padding:10px 0 10px 18px;border-left:3px solid var(--cyan);margin-bottom:12px}
+#design-c .fx-factors b{display:block;font-family:var(--head);color:var(--ink)}
+#design-c .fx-factors span{font-size:var(--t-sm);color:var(--muted)}
+#design-c .fx-estg{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:var(--s6);align-items:stretch}
+#design-c .fx-ctl{background:#fff;border:1px solid var(--line);border-radius:var(--r-lg);padding:var(--s5);display:grid;gap:var(--s5);align-content:start}
+#design-c .fx-ctl label,#design-c .fx-ctl legend{font-family:var(--head);font-weight:700;color:var(--ink);font-size:var(--t-base);display:block;margin-bottom:8px;padding:0}
+#design-c .fx-ctl fieldset{border:0;margin:0;padding:0}
+#design-c .fx-ctl output{float:right;font-family:var(--head);font-weight:800;color:var(--blue)}
+#design-c .fx-ctl input[type=range]{width:100%;accent-color:var(--blue);height:28px}
+#design-c .fx-ctl .hint{font-size:var(--t-sm);color:var(--muted);margin:6px 0 0}
+#design-c .fx-seg{display:flex;gap:8px}
+#design-c .fx-seg label{flex:1;margin:0;cursor:pointer}
+#design-c .fx-seg input{position:absolute;opacity:0;pointer-events:none}
+#design-c .fx-seg span{display:block;text-align:center;padding:12px 0;border:2px solid var(--line-2);border-radius:var(--r-sm);font-family:var(--head);font-weight:700;color:var(--navy-900);
+  transition:background-color 160ms var(--ease-out),border-color 160ms var(--ease-out),color 160ms var(--ease-out)}
+#design-c .fx-seg input:checked+span{background:var(--navy-900);border-color:var(--navy-900);color:#fff}
+#design-c .fx-seg input:focus-visible+span{outline:2px solid var(--cyan);outline-offset:2px}
+#design-c .fx-chk{display:flex;gap:12px;align-items:center;cursor:pointer;margin:0}
+#design-c .fx-chk input{width:22px;height:22px;accent-color:var(--blue)}
+#design-c .fx-res{background:var(--navy-900);color:var(--on-dark-2);border-radius:var(--r-lg);padding:var(--s6) var(--s5);display:flex;flex-direction:column}
+#design-c .fx-res .k{font-family:var(--head);font-weight:700;font-size:var(--t-sm);color:var(--cyan-lite);margin:0}
+#design-c .fx-res .big{font-family:var(--head);font-weight:800;color:#fff;font-size:clamp(44px,5vw,64px);line-height:1.05;margin:6px 0 var(--s4)}
+#design-c .fx-res dl{margin:0 0 var(--s4);display:grid;grid-template-columns:1fr auto;gap:10px var(--s4);border-top:1px solid #1D3F78;padding-top:var(--s4)}
+#design-c .fx-res dt{color:var(--on-dark-2)} #design-c .fx-res dd{margin:0;color:#fff;font-family:var(--head);font-weight:700;text-align:right}
+#design-c .fx-res .fine{font-size:var(--t-sm);margin:auto 0 var(--s4);color:var(--on-dark-2)}
+#design-c .fx-res .k{color:var(--cyan-lite)}
+#design-c .fx-back p,#design-c .fx-cov .main p{color:var(--on-dark-2)}
+#design-c .fx-sheet{background:#fff;border:1px solid var(--line-2);border-radius:var(--r);box-shadow:var(--shadow-2);padding:var(--s6);max-width:980px;margin-inline:auto}
+#design-c .fx-sheet header{display:flex;flex-wrap:wrap;justify-content:space-between;gap:var(--s3);align-items:baseline;border-bottom:2px solid var(--navy-900);padding-bottom:var(--s3);margin-bottom:var(--s4)}
+#design-c .fx-sheet header h3{font-size:var(--t-xl);margin:0}
+#design-c .fx-sheet header span{font-size:var(--t-sm);color:var(--muted)}
+#design-c .fx-sheet h4{font-size:var(--t-base);color:var(--blue);margin:var(--s4) 0 var(--s2)}
+#design-c .fx-sheet ul{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:1fr 1fr;gap:0 var(--s6)}
+#design-c .fx-sheet li{display:grid;grid-template-columns:22px 1fr;gap:12px;padding:12px 0;border-bottom:1px solid var(--line);font-size:var(--t-sm);color:var(--body)}
+#design-c .fx-sheet li::before{content:'';width:18px;height:18px;border:2px solid var(--navy-700);border-radius:3px;margin-top:2px}
+#design-c .fx-sheet li:last-child:nth-child(odd){grid-column:1/-1}
+#design-c .fx-sheet li b{display:block;color:var(--ink);font-family:var(--head);font-size:var(--t-base)}
+#design-c .fx-sheetfoot{display:flex;justify-content:center;margin-top:var(--s5)}
+#design-c .fx-acct{display:grid;grid-template-columns:minmax(0,5fr) minmax(0,7fr);gap:var(--s7);align-items:start}
+#design-c .fx-acct .shead{text-align:left;margin:0;max-width:none}
+#design-c .fx-acct ul{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:1fr 1fr;gap:var(--s3) var(--s5)}
+#design-c .fx-acct li{padding:14px 0 14px 16px;border-left:3px solid var(--cyan);color:#fff;font-family:var(--head);font-weight:700;line-height:1.35}
+#design-c .fx-acct li small{display:block;font-family:var(--text);font-weight:400;color:var(--on-dark-2);font-size:var(--t-sm);margin-top:4px}
+
+/* --- warranty page --- */
+#design-c .fx-wg{display:grid;grid-template-columns:minmax(0,7fr) minmax(0,5fr);gap:var(--s7);align-items:start}
+#design-c .fx-stmt{font-family:var(--head);font-weight:800;color:var(--ink);font-size:clamp(25px,2.6vw,34px);line-height:1.25;margin:0;border-left:5px solid var(--cyan);padding-left:var(--s4)}
+#design-c .fx-cov{display:grid;gap:var(--s3)}
+#design-c .fx-cov div{border:1px solid var(--line);border-radius:var(--r);padding:var(--s4);background:#fff}
+#design-c .fx-cov div.main{background:var(--navy-900);border-color:var(--navy-900);color:var(--on-dark-2)}
+#design-c .fx-cov h3{font-size:var(--t-lg);margin:0 0 6px} #design-c .fx-cov .main h3{color:#fff}
+#design-c .fx-cov p{margin:0;font-size:var(--t-sm)}
+#design-c .fx-qa{width:100%;border-collapse:collapse;font-size:var(--t-base)}
+#design-c .fx-qa th,#design-c .fx-qa td{text-align:left;vertical-align:top;padding:16px 18px;border-bottom:1px solid var(--line)}
+#design-c .fx-qa thead th{font-family:var(--head);color:#fff;background:var(--navy-900)}
+#design-c .fx-qa thead th:first-child{border-radius:var(--r-sm) 0 0 0} #design-c .fx-qa thead th:last-child{border-radius:0 var(--r-sm) 0 0}
+#design-c .fx-qa tbody th{font-family:var(--head);font-weight:700;color:var(--ink);width:52%}
+#design-c .fx-qa td{color:var(--body);background:#fff}
+
+/* --- financing page --- */
+#design-c .fx-kinds{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:0;border:1px solid var(--line-2);border-radius:var(--r);overflow:hidden;background:#fff}
+#design-c .fx-kinds>div{padding:var(--s5);border-left:1px solid var(--line-2)}
+#design-c .fx-kinds>div:first-child{border-left:0}
+#design-c .fx-kinds h3{font-size:var(--t-lg);margin:0 0 10px}
+#design-c .fx-kinds p{margin:0 0 10px;font-size:var(--t-sm)}
+#design-c .fx-kinds .ask{font-family:var(--head);font-weight:700;color:var(--navy-800);font-size:var(--t-sm);margin:0}
+#design-c .fx-how{list-style:none;margin:0;padding:0;counter-reset:h;display:grid;gap:var(--s4)}
+#design-c .fx-how li{display:grid;grid-template-columns:44px 1fr;gap:var(--s3)}
+#design-c .fx-how li::before{counter-increment:h;content:counter(h);width:40px;height:40px;border-radius:50%;background:var(--navy-900);color:#fff;display:grid;place-items:center;font-family:var(--head);font-weight:800}
+#design-c .fx-how b{display:block;font-family:var(--head);color:var(--ink);font-size:var(--t-lg)}
+#design-c .fx-disc{border:2px dashed #C9A227;background:#FFFBEA;border-radius:var(--r);padding:var(--s4) var(--s5);color:#5A4300;font-size:var(--t-sm);margin-top:var(--s5)}
+#design-c .fx-disc b{font-family:var(--head)}
+#design-c .fx-plain{max-width:820px}
+#design-c .fx-plain p{margin:0 0 var(--s3)}
+
+/* --- header: one more item on the bar --- */
+@media (min-width:1061px){#design-c .hd-nav{gap:20px}}
+@media (min-width:1061px) and (max-width:1260px){#design-c .hd-nav{gap:14px;font-size:14px}#design-c .hd-nav .btn{padding:12px 18px}}
+#design-c .mega.fx-m3{min-width:260px}
+#design-c .mega{flex-wrap:wrap;width:max-content;max-width:92vw}
+#design-c .mega .megafoot{flex:1 0 100%;margin-top:0}
+#design-c .mega .mcol li{white-space:nowrap}
+#design-c .mega i.new{font-style:normal;font-family:var(--head);font-weight:700;font-size:11px;color:#8A5A00;background:#FFF7DD;padding:1px 6px;border-radius:4px;margin-left:6px}
+
+@media (max-width:1060px){
+  #design-c .fx-sysg,#design-c .fx-costg,#design-c .fx-estg,#design-c .fx-acct,#design-c .fx-wg{grid-template-columns:1fr;gap:var(--s5)}
+  #design-c .fx-parts{grid-template-columns:1fr;grid-template-rows:none;grid-auto-flow:row}
+  #design-c .fx-kinds{grid-template-columns:1fr} #design-c .fx-kinds>div{border-left:0;border-top:1px solid var(--line-2)} #design-c .fx-kinds>div:first-child{border-top:0}
+}
+@media (max-width:640px){
+  #design-c .fx-ledger li{flex-direction:column;gap:6px} #design-c .fx-ledger .p{text-align:left;font-size:var(--t-xl);white-space:normal}
+  #design-c .fx-factors{columns:1} #design-c .fx-sheet{padding:var(--s4)} #design-c .fx-sheet ul,#design-c .fx-acct ul{grid-template-columns:1fr}
+  #design-c .fx-qa thead{display:none} #design-c .fx-qa tr{display:block;border-bottom:1px solid var(--line);padding:12px 0}
+  #design-c .fx-qa th,#design-c .fx-qa td{display:block;width:auto;border:0;padding:4px 0;background:none}
+  #design-c .fx-part{padding:10px 10px}
+}
+@media print{
+  html.fx-print body *{visibility:hidden}
+  html.fx-print .fx-sheet,html.fx-print .fx-sheet *{visibility:visible}
+  html.fx-print .fx-sheet{position:absolute;left:0;top:0;width:100%;box-shadow:none;border:0}
+}
+
+/* --- second pass: static diagrams, payment estimator, projects by town --- */
+#design-c .fx-dg{display:grid;grid-template-columns:minmax(0,5fr) minmax(0,7fr);gap:var(--s7);align-items:center}
+#design-c .fx-dg.flip{grid-template-columns:minmax(0,7fr) minmax(0,5fr)}
+#design-c .fx-dg.flip>.fx-dgt{order:2}
+#design-c .fx-dgt .shead{text-align:left;max-width:none;margin-bottom:var(--s4)}
+#design-c .fx-dgt ul{list-style:none;margin:0;padding:0;display:grid;gap:10px}
+#design-c .fx-dgt li{padding:4px 0 4px 16px;border-left:3px solid var(--cyan);font-family:var(--head);font-weight:700;color:var(--ink)}
+#design-c .fx-dgt li small{font-family:var(--text);font-weight:400;color:var(--muted);font-size:var(--t-sm);margin-left:8px}
+#design-c .fx-dgp{background:#04204D;border-radius:var(--r-lg);padding:var(--s3);box-shadow:var(--shadow-2)}
+#design-c .fx-dgp svg{display:block;width:100%;height:auto}
+#design-c .fx-dgp text{font-family:var(--head);font-weight:700;font-size:15px;fill:#E2EEFA}
+#design-c .fx-dgp text.o{fill:#FFC12E}
+#design-c .fx-dgp .ld{stroke:#8FAACA;stroke-width:1.5;fill:none}
+#design-c #fx-pay output{float:right;font-family:var(--head);font-weight:800;color:var(--blue)}
+#design-c .gfilt{display:flex;flex-wrap:wrap;gap:8px;justify-content:center;margin-bottom:var(--s5)}
+#design-c .gfilt button{font:700 var(--t-sm)/1 var(--head);color:var(--navy-900);background:#fff;border:1px solid var(--line-2);
+  border-radius:var(--r-pill);padding:10px 16px;cursor:pointer;transition:background-color 160ms var(--ease-out),color 160ms var(--ease-out)}
+#design-c .gfilt button[aria-pressed="true"]{background:var(--navy-900);border-color:var(--navy-900);color:#fff}
+#design-c .fx-ba>div,#design-c .fx-tg>img{min-width:0}
+#design-c .fx-towns{display:none}
+#design-c .fx-towns.on{display:block}
+#design-c .fx-ba{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-bottom:12px}
+#design-c .fx-ba div{aspect-ratio:16/9;border:2px dashed #C9A227;background:#FFFBEA;border-radius:var(--r);display:flex;flex-direction:column;justify-content:center;align-items:center;gap:4px;text-align:center;
+  color:#5A4300;font-family:var(--head);font-weight:700;padding:var(--s3)}
+#design-c .fx-ba small{display:block;font-family:var(--text);font-weight:400;font-size:var(--t-sm)}
+#design-c .fx-tg{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}
+#design-c .fx-tg img{width:100%;aspect-ratio:4/3;object-fit:cover;border-radius:var(--r);display:block}
+#design-c .fx-th{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:baseline;gap:var(--s3);margin:0 0 var(--s4)}
+#design-c .fx-th h3{font-size:var(--t-xl);margin:0}
+#design-c .fx-th a{font-family:var(--head);font-weight:700;color:var(--blue);text-decoration:underline;text-underline-offset:4px}
+@media (max-width:1060px){#design-c .fx-dg,#design-c .fx-dg.flip{grid-template-columns:1fr;gap:var(--s5)}#design-c .fx-dg.flip>.fx-dgt{order:0}}
+@media (max-width:640px){#design-c .fx-tg{grid-template-columns:1fr 1fr}#design-c .fx-tg img:last-child{grid-column:1/-1}
+  #design-c .fx-dgp text{font-size:19px}}
 </style>
 </head>
 <body>
@@ -1625,11 +1828,10 @@ body .design .sfoot{background:#000c22;border-top:3px solid var(--cyan);box-shad
 </div></div><header class="hd"><div class="wrap hd-row">
   <a class="hd-logo" href="../"><img src="../video/ard-logo-2026-dark.png" alt="ARD Waterproofing"></a>
   <ul class="hd-nav">
-    <li class="has-mega"><a href="../services/">Our Services <span aria-hidden="true">&#9662;</span></a>
-      <div class="mega"><div class="mcol"><h5>Waterproofing &amp; Basement</h5><ul><li><a href="../basement-waterproofing/">Basement Waterproofing</a></li><li><a href="../foundation-waterproofing/">Foundation Waterproofing</a></li><li><a href="../interior-french-drains/">Interior French Drains</a></li><li><a href="../exterior-french-drains/">Exterior French Drains</a></li><li><a href="../channel-drains/">Channel Drains</a></li><li><a href="../crawl-space-encapsulation/">Crawlspace Encapsulation</a></li><li><a href="../sump-pumps/">Sump Pumps</a></li><li><a href="../window-wells-egress-windows/">Window Wells &amp; Egress Windows</a></li></ul></div><div class="mcol"><h5>Outdoor Services</h5><ul><li><a href="../retaining-walls/">Retaining Walls</a></li><li><a href="../patios-pavers/">Patios &amp; Pavers</a></li><li><a href="../walkways/">Driveway &amp; Walkway</a></li><li><a href="../masonry/">Masonry</a></li></ul></div><a class="megafoot" href="../services/">View all services &rarr;</a></div></li>
+    <li class="has-mega"><a href="../services/">Our Services <span aria-hidden="true">&#9662;</span></a> <div class="mega"><div class="mcol"><h5>Drainage &amp; Waterproofing</h5><ul><li><a href="../basement-waterproofing/">Basement Waterproofing</a></li><li><a href="../foundation-waterproofing/">Foundation Waterproofing</a></li><li><a href="../interior-french-drains/">Interior French Drains</a></li><li><a href="../exterior-french-drains/">Exterior French Drains</a></li><li><a href="../sump-pumps/">Sump Pumps &amp; Battery Backup</a></li><li><a href="../underground-discharge-downspout-drainage/">Underground Discharge &amp; Downspouts<i class="new">New</i></a></li><li><a href="../channel-drains/">Driveway &amp; Garage Channel Drains</a></li><li><a href="../drywells-cultec-systems/">Drywells &amp; CULTEC Systems<i class="new">New</i></a></li><li><a href="../foundation-crack-injection/">Foundation Crack Injection<i class="new">New</i></a></li><li><a href="../crawl-space-encapsulation/">Crawlspace Encapsulation</a></li><li><a href="../window-wells-egress-windows/">Window Wells &amp; Egress Windows</a></li></ul></div><div class="mcol"><h5>Exterior &amp; Restoration</h5><ul><li><a href="../grading/">Grading<i class="new">New</i></a></li><li><a href="../retaining-walls/">Retaining Walls</a></li><li><a href="../patios-pavers/">Patios &amp; Pavers</a></li><li><a href="../walkways/">Driveway &amp; Walkway</a></li><li><a href="../masonry/">Masonry &amp; Concrete</a></li><li><a href="../finished-basement-restoration/">Finished-Basement Restoration<i class="new">New</i></a></li></ul></div><a class="megafoot" href="../services/">View all services &rarr;</a></div></li>
     <li class="has-mega"><a href="../areas-we-serve/">Areas We Serve <span aria-hidden="true">&#9662;</span></a>
       <div class="mega"><div class="mcol"><h5>Essex, Passaic, Union, and Morris Counties</h5><ul class="acols"><li><a href="../west-caldwell/">West Caldwell</a></li><li><a href="../livingston/">Livingston</a></li><li><a href="../montclair/">Montclair</a></li><li><a href="../north-caldwell/">North Caldwell</a></li><li><a href="../short-hills/">Short Hills</a></li><li><a href="../south-orange/">South Orange</a></li><li><a href="../summit/">Summit</a></li><li><a href="../verona/">Verona</a></li><li><a href="../wayne/">Wayne</a></li><li><a href="../west-orange/">West Orange</a></li></ul></div><a class="megafoot" href="../areas-we-serve/">All service areas &rarr;</a></div></li>
-    <li><a href="../gallery/">Gallery</a></li><li><a href="../reviews/">Reviews</a></li><li><a href="../blog/">Blog</a></li><li><a href="../about/">About</a></li><li><a href="../contact/">Contact</a></li>
+    <li class="has-mega"><a href="../pricing/">Pricing <span aria-hidden="true">&#9662;</span></a> <div class="mega fx-m3"><div class="mcol"><h5>Pricing &amp; Warranty</h5><ul><li><a href="../pricing/">Price Guide</a></li><li><a href="../pricing/#estimator">Budget Estimator</a></li><li><a href="../warranty/">Warranty</a></li><li><a href="../financing/">Financing</a></li><li><a href="../financing/#payment">Payment Estimator</a></li></ul></div></div></li> <li><a href="../gallery/">Gallery</a></li><li><a href="../reviews/">Reviews</a></li><li><a href="../blog/">Blog</a></li><li><a href="../about/">About</a></li><li><a href="../contact/">Contact</a></li>
     <li><a class="hd-tel" href="tel:+19176918411">(917) 691-8411</a></li>
     <li><a class="btn btn-p" href="#estimate">Request A Free Estimate</a></li>
   </ul>
@@ -1641,9 +1843,8 @@ body .design .sfoot{background:#000c22;border-top:3px solid var(--cyan);box-shad
 </div></header>
 <div class="drawer" id="drawer-c">
   <button class="dclose" type="button" data-drawer-close="c" aria-label="Close menu">&times;</button>
-  <h5>Our Services</h5><a href="../basement-waterproofing/">Basement Waterproofing</a><a href="../foundation-waterproofing/">Foundation Waterproofing</a><a href="../interior-french-drains/">Interior French Drains</a><a href="../exterior-french-drains/">Exterior French Drains</a><a href="../channel-drains/">Channel Drains</a><a href="../crawl-space-encapsulation/">Crawlspace Encapsulation</a><a href="../sump-pumps/">Sump Pumps</a><a href="../window-wells-egress-windows/">Window Wells &amp; Egress Windows</a><a href="../retaining-walls/">Retaining Walls</a><a href="../patios-pavers/">Patios &amp; Pavers</a><a href="../walkways/">Driveway &amp; Walkway</a><a href="../masonry/">Masonry</a><a href="../services/"><b>View all services &rarr;</b></a>
-  <h5>Areas We Serve</h5><a href="../west-caldwell/">West Caldwell</a><a href="../livingston/">Livingston</a><a href="../montclair/">Montclair</a><a href="../north-caldwell/">North Caldwell</a><a href="../short-hills/">Short Hills</a><a href="../south-orange/">South Orange</a><a href="../summit/">Summit</a><a href="../verona/">Verona</a><a href="../wayne/">Wayne</a><a href="../west-orange/">West Orange</a><a href="../areas-we-serve/"><b>All service areas &rarr;</b></a>
-  <h5>Company</h5><a href="../gallery/">Gallery</a><a href="../reviews/">Reviews</a><a href="../blog/">Blog</a><a href="../about/">About</a><a href="../contact/">Contact</a>
+  <h5>Our Services</h5><a href="../basement-waterproofing/">Basement Waterproofing</a><a href="../foundation-waterproofing/">Foundation Waterproofing</a><a href="../interior-french-drains/">Interior French Drains</a><a href="../exterior-french-drains/">Exterior French Drains</a><a href="../sump-pumps/">Sump Pumps &amp; Battery Backup</a><a href="../underground-discharge-downspout-drainage/">Underground Discharge &amp; Downspouts</a><a href="../channel-drains/">Driveway &amp; Garage Channel Drains</a><a href="../drywells-cultec-systems/">Drywells &amp; CULTEC Systems</a><a href="../foundation-crack-injection/">Foundation Crack Injection</a><a href="../crawl-space-encapsulation/">Crawlspace Encapsulation</a><a href="../window-wells-egress-windows/">Window Wells &amp; Egress Windows</a><a href="../grading/">Grading</a><a href="../retaining-walls/">Retaining Walls</a><a href="../patios-pavers/">Patios &amp; Pavers</a><a href="../walkways/">Driveway &amp; Walkway</a><a href="../masonry/">Masonry &amp; Concrete</a><a href="../finished-basement-restoration/">Finished-Basement Restoration</a><a href="../services/"><b>View all services &rarr;</b></a> <h5>Areas We Serve</h5><a href="../west-caldwell/">West Caldwell</a><a href="../livingston/">Livingston</a><a href="../montclair/">Montclair</a><a href="../north-caldwell/">North Caldwell</a><a href="../short-hills/">Short Hills</a><a href="../south-orange/">South Orange</a><a href="../summit/">Summit</a><a href="../verona/">Verona</a><a href="../wayne/">Wayne</a><a href="../west-orange/">West Orange</a><a href="../areas-we-serve/"><b>All service areas &rarr;</b></a>
+  <h5>Pricing &amp; Warranty</h5><a href="../pricing/">Price Guide</a><a href="../pricing/#estimator">Budget Estimator</a><a href="../warranty/">Warranty</a><a href="../financing/">Financing</a><a href="../financing/#payment">Payment Estimator</a> <h5>Company</h5><a href="../gallery/">Gallery</a><a href="../reviews/">Reviews</a><a href="../blog/">Blog</a><a href="../about/">About</a><a href="../contact/">Contact</a>
   <div class="dcta">
     <a class="btn btn-p btn-lg" href="#estimate">Request A Free Estimate</a>
     <a class="btn btn-g btn-lg" href="tel:+19176918411">Call Us Now</a>
@@ -1677,7 +1878,40 @@ body .design .sfoot{background:#000c22;border-top:3px solid var(--cyan);box-shad
 </div></section><section class="sec sec-mist"><div class="wrap mlong">
   <div class="mtext"><p class="leadp">West Caldwell homeowners dealing with a wet basement deserve a fix that lasts, not a patch job they’ll redo in five years. ARD Waterproofing installs interior French drain systems that permanently redirect groundwater away from your foundation, with the owner on-site for every job and a 100% lifetime transferable warranty protecting your investment for as long as you own the home.</p><h2>Tired of Watching Your Basement Flood Every Time It Rains?</h2><p>You already know something’s wrong. The question is whether you’ll get a real fix, or another band-aid that fails before the next storm.</p><ul class="checks rv"><li><svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M2.5 8.5l3.5 3.5 7.5-8" stroke="#0068C0" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg><span><b>The last guy who came out just wanted to sell me the most expensive option</b>. We diagnose the actual root cause first, then recommend only what your home actually needs. No upselling outside our specialty.</span></li><li><svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M2.5 8.5l3.5 3.5 7.5-8" stroke="#0068C0" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg><span><b>I’m worried they’ll tear up my basement and leave a mess</b>. Our crews clean up completely before they leave. Mohammad R. put it simply: they left his basement cleaner than they found it.</span></li><li><svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M2.5 8.5l3.5 3.5 7.5-8" stroke="#0068C0" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg><span><b>What if the fix doesn’t hold?</b>. Our interior French drain systems come with a 100% lifetime transferable warranty. If the water ever comes back, we come back. No fine print. No expiration date.</span></li></ul><h2>Everything Your Basement Needs to Stay Permanently Dry</h2><h3>Interior French Drain Installation</h3><p>We cut a narrow trench along your basement’s perimeter, install a perforated drainage pipe in graded stone, and connect it directly to your sump pump system. This intercepts groundwater before it can push through your walls and floor. You walk away with a dry basement that stays dry, not just during dry spells, but through the heaviest NJ rainstorms.</p><h3>Sump Pump Installation &amp; Replacement</h3><p>The French drain is only as good as the pump removing the water. We install high-quality sump pump systems sized to your basement’s specific water volume. You get continuous, automatic water removal that activates the moment water enters the basin, even when you’re not home.</p><p><a class="more" href="../sump-pumps/">Sump Pumps &rarr;</a></p><h3>Battery Backup Sump Pump Systems</h3><p>Power outages happen most during the same storms that flood basements. A battery backup system keeps your pump running when the grid goes down. You get around-the-clock flood protection even when the lights are out.</p><h3>Basement Wall Vapor Barrier Installation</h3><p>Water doesn’t only come up through the floor, it seeps through poured concrete walls too. We install a wall vapor barrier that stops moisture intrusion at the source. You get a visibly drier, healthier basement with dramatically reduced risk of mold and wall deterioration.</p><p><a class="more" href="../basement-waterproofing/">Basement Waterproofing &rarr;</a></p><h3>Foundation Crack Repair</h3><p>Active cracks in your foundation walls are direct entry points for water. We seal them with professional-grade materials that stop intrusion and stabilize the wall. You get structural peace of mind and a sealed foundation that holds up for years.</p><p><a class="more" href="../foundation-waterproofing/">Foundation Waterproofing &rarr;</a></p><h3>Crawl Space Drainage Solutions</h3><p>Standing water in a crawl space rots floor joists, breeds mold, and pushes moisture into your living areas. We install custom drainage systems that remove that water and keep it out. You get a dry, structurally sound crawl space, and better air quality throughout your home.</p><p><a class="more" href="../crawl-space-encapsulation/">Crawlspace Encapsulation &rarr;</a></p><h2>Why NJ Residents Choose ARD Waterproofing for Interior French Drains</h2><p>Most waterproofing contractors in this area send a salesperson to your home, close the deal, and then send a crew you’ve never met to do the actual work. ARD Waterproofing operates differently: the owner is physically on-site for every single project. That means the person responsible for the quality of your job is standing in your basement while it’s being done, not sitting in an office reviewing photos.</p><p>On the warranty side, ARD’s 100% Lifetime Transferable Warranty is the strongest in the market. Most competitors offer limited warranties that shrink over time or void on home sale. ARD’s warranty stays in full force for the life of the home and transfers to new owners at the time of title transfer, which means your drainage system actually adds measurable value when you sell.</p></div>
   <div class="mside rv"><img src="../gallery/full/069.jpg" alt="ARD technician finishing the concrete over a newly installed interior perimeter drain" loading="lazy"></div>
-</div></section><section class="sec sec-mist"><div class="wrap">
+</div></section><section class="sec on-dark fx-sys" id="system"><div class="wrap">
+  <div class="shead shead-c"><p class="eyebrow">Interior French drain, part by part</p>
+  <h2>What your <em>system includes</em></h2>
+  <p class="lede">A price only means something when you know what the system includes. These are the parts of an ARD interior French drain system.</p></div>
+  <div class="fx-sysg"><div class="fx-dia rv"><svg viewBox="0 92 640 428" role="img" aria-label="Cross-section of an interior French drain system: drain at the footing, sump basin and discharge line to the yard">
+<rect x="0" y="170" width="150" height="350" fill="#0B2550"/><rect x="150" y="394" width="490" height="126" fill="#0B2550"/>
+<line x1="0" y1="170" x2="150" y2="170" stroke="#5F84B8" stroke-width="2"/>
+<text x="14" y="118" fill="#8FAACA" font-size="14">Yard</text><text x="556" y="118" fill="#8FAACA" font-size="14">Basement</text>
+<g stroke="#00B0F0" stroke-width="2" fill="none" stroke-linecap="round"><path d="M96 300h34m-8-6l8 6-8 6"/><path d="M84 345h46m-8-6l8 6-8 6"/><path d="M96 388h34m-8-6l8 6-8 6"/></g>
+<text x="14" y="330" fill="#8FAACA" font-size="14">Ground</text><text x="14" y="347" fill="#8FAACA" font-size="14">water</text>
+<rect x="150" y="30" width="60" height="40" fill="#1B3A6E" stroke="#5F84B8"/><rect x="157" y="37" width="20" height="26" fill="#0B2550"/><rect x="183" y="37" width="20" height="26" fill="#0B2550"/><rect x="150" y="71" width="60" height="40" fill="#1B3A6E" stroke="#5F84B8"/><rect x="157" y="78" width="20" height="26" fill="#0B2550"/><rect x="183" y="78" width="20" height="26" fill="#0B2550"/><rect x="150" y="112" width="60" height="40" fill="#1B3A6E" stroke="#5F84B8"/><rect x="157" y="119" width="20" height="26" fill="#0B2550"/><rect x="183" y="119" width="20" height="26" fill="#0B2550"/><rect x="150" y="153" width="60" height="40" fill="#1B3A6E" stroke="#5F84B8"/><rect x="157" y="160" width="20" height="26" fill="#0B2550"/><rect x="183" y="160" width="20" height="26" fill="#0B2550"/><rect x="150" y="194" width="60" height="40" fill="#1B3A6E" stroke="#5F84B8"/><rect x="157" y="201" width="20" height="26" fill="#0B2550"/><rect x="183" y="201" width="20" height="26" fill="#0B2550"/><rect x="150" y="235" width="60" height="40" fill="#1B3A6E" stroke="#5F84B8"/><rect x="157" y="242" width="20" height="26" fill="#0B2550"/><rect x="183" y="242" width="20" height="26" fill="#0B2550"/><rect x="150" y="276" width="60" height="40" fill="#1B3A6E" stroke="#5F84B8"/><rect x="157" y="283" width="20" height="26" fill="#0B2550"/><rect x="183" y="283" width="20" height="26" fill="#0B2550"/><rect x="150" y="317" width="60" height="40" fill="#1B3A6E" stroke="#5F84B8"/><rect x="157" y="324" width="20" height="26" fill="#0B2550"/><rect x="183" y="324" width="20" height="26" fill="#0B2550"/><rect x="150" y="358" width="60" height="40" fill="#1B3A6E" stroke="#5F84B8"/><rect x="157" y="365" width="20" height="26" fill="#0B2550"/><rect x="183" y="365" width="20" height="26" fill="#0B2550"/>
+<rect x="132" y="399" width="96" height="36" fill="#24457D" stroke="#5F84B8"/>
+<rect x="300" y="372" width="340" height="22" fill="#24457D" stroke="#5F84B8"/>
+<g class="g" data-g="2"><rect x="212" y="394" width="88" height="48" fill="#13315F" stroke="#5F84B8"/><circle cx="222" cy="404" r="4" fill="#5F84B8"/><circle cx="234" cy="412" r="5" fill="#5F84B8"/><circle cx="226" cy="424" r="5" fill="#5F84B8"/><circle cx="240" cy="432" r="4" fill="#5F84B8"/><circle cx="282" cy="404" r="5" fill="#5F84B8"/><circle cx="292" cy="416" r="4" fill="#5F84B8"/><circle cx="284" cy="428" r="5" fill="#5F84B8"/><circle cx="272" cy="436" r="4" fill="#5F84B8"/><circle cx="254" cy="436" r="4" fill="#5F84B8"/><circle cx="294" cy="434" r="4" fill="#5F84B8"/><circle cx="222" cy="436" r="3" fill="#5F84B8"/><circle cx="268" cy="400" r="3" fill="#5F84B8"/><circle cx="246" cy="398" r="3" fill="#5F84B8"/></g>
+<g class="g" data-g="1"><rect x="221" y="372" width="79" height="22" fill="#4B74B3" stroke="#BFE9FB" stroke-dasharray="5 4"/></g>
+<g class="g" data-g="5"><rect x="212" y="296" width="8" height="100" fill="#93DBF8"/><g fill="#001840"><circle cx="216" cy="308" r="1.6"/><circle cx="216" cy="322" r="1.6"/><circle cx="216" cy="336" r="1.6"/><circle cx="216" cy="350" r="1.6"/><circle cx="216" cy="364" r="1.6"/><circle cx="216" cy="378" r="1.6"/></g></g>
+<g class="g" data-g="4" stroke="#00B0F0" stroke-width="3" stroke-linecap="round" fill="none"><path d="M196 380l18 10"/><path d="M170 380l8 5"/></g>
+<g class="g" data-g="3"><path d="M270 418H452" stroke="#5F84B8" stroke-width="13"/><path d="M270 418H452" stroke="#062A5C" stroke-width="9"/>
+<circle cx="256" cy="418" r="15" fill="#062A5C" stroke="#BFE9FB" stroke-width="3"/><g stroke="#BFE9FB" stroke-width="2"><path d="M247 412h4M261 412h4M247 424h4M261 424h4"/></g></g>
+<g class="g" data-g="6"><rect x="452" y="380" width="92" height="124" rx="6" fill="#062A5C" stroke="#BFE9FB" stroke-width="2"/>
+<rect x="454" y="468" width="88" height="34" rx="4" fill="#0A4E96"/><rect x="468" y="446" width="34" height="48" rx="5" fill="#3D6DB5" stroke="#BFE9FB"/>
+<rect x="444" y="366" width="108" height="14" rx="4" fill="#0068C0" stroke="#BFE9FB"/></g>
+<g class="g" data-g="8"><path d="M485 446V120H96V190" fill="none" stroke="#BFE9FB" stroke-width="7" stroke-linejoin="round"/><path d="M96 190V214H0" fill="none" stroke="#BFE9FB" stroke-width="7" stroke-linejoin="round" stroke-dasharray="10 6"/></g>
+<g class="g" data-g="7"><rect x="474" y="286" width="22" height="34" rx="4" fill="#93DBF8" stroke="#fff"/><path d="M472 292h26M472 314h26" stroke="#001840" stroke-width="3"/></g>
+<g class="g" data-g="9"><rect x="84" y="136" width="24" height="30" rx="4" fill="#00B0F0" stroke="#fff"/><path d="M90 145h12M90 151h12M90 157h12" stroke="#001840" stroke-width="2"/></g>
+<g class="g" data-g="10"><rect x="508" y="458" width="24" height="36" rx="4" fill="none" stroke="#FFC12E" stroke-width="2" stroke-dasharray="5 4"/>
+<rect x="572" y="330" width="54" height="42" rx="5" fill="#062A5C" stroke="#FFC12E" stroke-width="2" stroke-dasharray="5 4"/><path d="M584 330v-6h8v6M606 330v-6h8v6" stroke="#FFC12E" stroke-width="2" fill="none"/>
+<path d="M572 356H560V470H532" fill="none" stroke="#FFC12E" stroke-width="2" stroke-dasharray="5 4"/></g>
+<path class="fx-flow" d="M272 418H452"/><path class="fx-flow" d="M485 444V120H96V214H4"/>
+<g class="fx-mk" data-g="1"><circle cx="262" cy="352" r="13"/><text x="262" y="356" text-anchor="middle">1</text></g><g class="fx-mk" data-g="2"><circle cx="322" cy="448" r="13"/><text x="322" y="452" text-anchor="middle">2</text></g><g class="fx-mk" data-g="3"><circle cx="372" cy="418" r="13"/><text x="372" y="422" text-anchor="middle">3</text></g><g class="fx-mk" data-g="4"><circle cx="180" cy="352" r="13"/><text x="180" y="356" text-anchor="middle">4</text></g><g class="fx-mk" data-g="5"><circle cx="240" cy="310" r="13"/><text x="240" y="314" text-anchor="middle">5</text></g><g class="fx-mk" data-g="6"><circle cx="566" cy="440" r="13"/><text x="566" y="444" text-anchor="middle">6</text></g><g class="fx-mk" data-g="7"><circle cx="520" cy="303" r="13"/><text x="520" y="307" text-anchor="middle">7</text></g><g class="fx-mk" data-g="8"><circle cx="320" cy="120" r="13"/><text x="320" y="124" text-anchor="middle">8</text></g><g class="fx-mk" data-g="9"><circle cx="56" cy="151" r="13"/><text x="56" y="155" text-anchor="middle">9</text></g><g class="fx-mk" data-g="10"><circle cx="599" cy="302" r="13"/><text x="599" y="306" text-anchor="middle">10</text></g>
+</svg></div><ol class="fx-parts rv"><li><button type="button" class="fx-part" data-part="1" aria-pressed="false"><span class="n">1</span><span><b>Concrete cutting and replacement</b><span class="d">The slab is cut along the wall, then re-poured and finished once the drain is in.</span></span></button></li><li><button type="button" class="fx-part" data-part="2" aria-pressed="false"><span class="n">2</span><span><b>Proper trench and clean stone</b><span class="d">A trench at the footing, filled with clean stone so water can reach the pipe.</span></span></button></li><li><button type="button" class="fx-part" data-part="3" aria-pressed="false"><span class="n">3</span><span><b>Four-inch rigid drainage pipe</b><span class="d">Rigid pipe that carries the collected water to the sump.</span></span></button></li><li><button type="button" class="fx-part" data-part="4" aria-pressed="false"><span class="n">4</span><span><b>Weep holes in every applicable hollow-block cell</b><span class="d">Drilled low in the block so water held inside the wall drains into the system.</span></span></button></li><li><button type="button" class="fx-part" data-part="5" aria-pressed="false"><span class="n">5</span><span><b>Drain board about one foot up the wall</b><span class="d">Carries wall seepage down behind the new concrete and into the stone.</span></span></button></li><li><button type="button" class="fx-part" data-part="6" aria-pressed="false"><span class="n">6</span><span><b>Sealed sump basin and Zoeller pump</b><span class="d">A lidded basin that collects the water, with a Zoeller pump to move it out.</span></span></button></li><li><button type="button" class="fx-part" data-part="7" aria-pressed="false"><span class="n">7</span><span><b>Clear-union quiet check valve</b><span class="d">Stops pumped water from dropping back into the basin.</span></span></button></li><li><button type="button" class="fx-part" data-part="8" aria-pressed="false"><span class="n">8</span><span><b>Properly routed discharge line</b><span class="d">Carries the water outside and away from the foundation.</span></span></button></li><li><button type="button" class="fx-part" data-part="9" aria-pressed="false"><span class="n">9</span><span><b>Freeze Relief protection</b><span class="d">Gives water a way out if the outdoor line freezes or clogs.</span></span></button></li><li><button type="button" class="fx-part" data-part="10" aria-pressed="false"><span class="n">10</span><span><b>Dual-pump battery backup<i>Optional</i></b><span class="d">A second pump on battery power for outages.</span></span></button></li></ol>
+  <div class="fx-sysfoot"><p>Hold any other quote against the same list. If a part is missing, ask whether it is included or priced separately.</p><a class="btn btn-o" href="../pricing/">See price guidance</a></div></div>
+</div></section>
+<section class="sec sec-mist"><div class="wrap">
   <div class="shead shead-c"><p class="eyebrow">How it works</p><h2>From your call to a <em>dry basement</em></h2><p class="lede">Every job runs the same way: the property is walked before any scope is set.</p></div>
   <div class="lsteps"><div class="lstep rv"><span class="b">01</span><h3>You reach a human</h3><p>Call or text any time. ARD is open 24 hours for active flooding, so an emergency does not sit in a queue overnight.</p><div class="w">Reply within the hour</div></div><div class="lstep rv"><span class="b">02</span><h3>David Roth walks the property</h3><p>The owner inspects it himself, traces where the water actually enters, and identifies the root cause instead of the symptom.</p><div class="w">Usually next day</div></div><div class="lstep rv"><span class="b">03</span><h3>The inspection sets the scope</h3><p>Hydrostatic pressure, failed grading, an undersized pump, or a combination. You get the price in writing before anyone digs.</p><div class="w">Written at the visit</div></div><div class="lstep rv"><span class="b">04</span><h3>The crew works and cleans up</h3><p>Interior drains often finish inside a day. Patio and lawn sections disturbed by the work are rebuilt and the site is left neat.</p><div class="w">Often one day</div></div></div>
   <div class="ctarow center"><a class="btn btn-p btn-lg" href="#estimate">Request A Free Estimate</a> <a class="btn btn-g btn-lg" href="tel:+19176918411">Call Us Now</a></div>
@@ -1698,7 +1932,15 @@ body .design .sfoot{background:#000c22;border-top:3px solid var(--cyan);box-shad
 </div></section><section class="sec sec-mist"><div class="wrap">
   <div class="shead shead-c"><p class="eyebrow">Common questions</p><h2><em>Interior French Drains</em> questions</h2></div>
   <div class="mfaq"><details><summary><span class="q">Q</span><span class="t">How much does an interior French drain cost in New Jersey?</span></summary><p>In NJ, interior French drain installation typically runs $50 to $60 per linear foot, including labor, materials, sump pump integration, and cleanup. For an average-sized basement, most homeowners invest between $7,000 and $15,000 for a complete perimeter system. ARD provides all-inclusive quotes, no hidden fees, and will match any reasonable competing estimate.</p></details><details><summary><span class="q">Q</span><span class="t">How long does the installation take?</span></summary><p>Most installations for a standard basement are completed in 2 to 3 days. Our crews work efficiently and are trained to work around obstacles like water heaters and furnaces. You won&#x27;t be living with an open construction site for weeks.</p></details><details><summary><span class="q">Q</span><span class="t">Will cutting into my concrete floor damage my foundation?</span></summary><p>No. The trench is cut away from the foundation footing, not through it. By relieving hydrostatic pressure against your walls and floor, the drain system actually protects your foundation from the damage that water pressure causes over time.</p></details><details><summary><span class="q">Q</span><span class="t">Is an interior French drain better than an exterior one?</span></summary><p>For existing homes, interior is almost always the more practical choice. Exterior systems require excavating around your entire foundation, tearing up landscaping, patios, and hardscaping at significantly higher cost. Interior systems deliver equivalent or superior water management with far less disruption to your property.</p></details><details><summary><span class="q">Q</span><span class="t">What&#x27;s included in ARD&#x27;s quote?</span></summary><p>Everything. Professional labor, high-quality drainage materials, a complete sump pump system, all debris removal, site cleanup, concrete floor restoration, and the lifetime transferable warranty. The number on the estimate is the number you pay.</p></details><details><summary><span class="q">Q</span><span class="t">Do I need to do anything to maintain the system?</span></summary><p>Minimal maintenance is required. The main task is an annual sump pump inspection to confirm it&#x27;s operating correctly. ARD recommends a professional check-up once a year to protect your investment long-term.</p></details><details><summary><span class="q">Q</span><span class="t">What happens if water comes back after the system is installed?</span></summary><p>We come back. ARD&#x27;s 100% Lifetime Transferable Warranty covers the system for the life of your home with no expiration date. If the system ever fails to keep your basement dry, we return and make it right, at no cost to you.</p></details></div>
-</div></section><section class="sec on-dark mcta"><div class="wrap">
+</div></section><section class="sec fx-cost" id="pricing"><div class="wrap"><div class="fx-costg">
+  <div class="rv"><div class="shead"><p class="eyebrow">Price guidance</p><h2>Know the range <em>before the visit</em></h2>
+    <p class="lede">Planning figures for the systems ARD installs most. The written price comes after David walks the property.</p></div>
+    <p class="fx-draft">Draft figures proposed by ARD, shown for review. Not final pricing.</p><ul class="fx-ledger"><li><span class="w">Interior French drain system<small>Per linear foot of drain. Sump system and battery backup are priced as their own lines</small></span><span class="p"><!-- PENDING-CONFIRM: client to verify; ARD's proposed figure shown --><u>from</u>$95<small>per linear foot, $3,500 project minimum</small></span></li><li><span class="w">New standalone sump pit and pump<small>Where no drain is being installed</small></span><span class="p"><!-- PENDING-CONFIRM: client to verify; ARD's proposed figure shown --><u>from about</u>$1,850</span></li><li><span class="w">Sump system, with an interior drain<small>Added to a French drain installation</small></span><span class="p"><!-- PENDING-CONFIRM: client to verify; ARD's proposed figure shown --><u>about</u>$1,250</span></li><li><span class="w">Battery-backup system<small>With a French drain installation</small></span><span class="p"><!-- PENDING-CONFIRM: client to verify; ARD's proposed figure shown --><u>about</u>$1,900</span></li></ul><p class="fx-note">Final pricing depends on footage, demolition, access, the number of sump systems, discharge routing, electrical work, restoration and permits.</p><a class="btn btn-g" href="../pricing/">See the full price guide</a></div>
+  <aside class="fx-back rv"><h3><em>Lifetime of the structure</em>, in writing</h3><p>ARD's qualifying interior French-drain workmanship is warranted for the lifetime of the structure and may be transferred once. Pumps and mechanical equipment have separate coverage.</p>
+    <a class="tl" href="../warranty/">Read the warranty</a><hr>
+    <h4>Financing through Wisetack</h4><p>Prequalify with Wisetack to see monthly-payment options. Financing is subject to lender approval, and not every customer will qualify for every plan.</p><a class="tl" href="../financing/">See financing options</a></aside>
+</div></div></section>
+<section class="sec on-dark mcta"><div class="wrap">
   <p class="eyebrow">Start with a free inspection</p><h2>Get your interior french drains priced in writing</h2>
   <p class="lede">David walks the property, finds where the water is actually coming from, and leaves you a written
   price before any work starts.</p>
@@ -1893,5 +2135,63 @@ body .design .sfoot{background:#000c22;border-top:3px solid var(--cyan);box-shad
 })();
 </script>
 
+<script>
+(function(){
+  /* system diagram: list and drawing highlight each other; it walks itself until touched */
+  document.querySelectorAll('.fx-sys').forEach(function(r){
+    var dia=r.querySelector('.fx-dia'),cur=0,last=0,vis=false;
+    function set(n){cur=n;dia.classList.toggle('has-on',!!n);
+      r.querySelectorAll('[data-g]').forEach(function(g){g.classList.toggle('on',+g.getAttribute('data-g')===n);});
+      r.querySelectorAll('.fx-part').forEach(function(p){var on=+p.getAttribute('data-part')===n;p.classList.toggle('on',on);p.setAttribute('aria-pressed',on?'true':'false');});}
+    function bind(el,attr){['mouseenter','focus','click'].forEach(function(ev){el.addEventListener(ev,function(){last=Date.now();set(+el.getAttribute(attr));});});}
+    r.querySelectorAll('.fx-part').forEach(function(p){bind(p,'data-part');});
+    r.querySelectorAll('.fx-mk').forEach(function(m){bind(m,'data-g');});
+    if('IntersectionObserver' in window){new IntersectionObserver(function(en){vis=en[0].isIntersecting;},{threshold:.25}).observe(dia);}else{vis=true;}
+    setInterval(function(){if(vis&&Date.now()-last>7000){set(cur%10+1);}},2400);
+  });
+  /* budget estimator, from the draft price guide */
+  var f=document.getElementById('fx-est');
+  if(f){
+    var money=function(n){return '$'+n.toLocaleString('en-US');};
+    var calc=function(){
+      var lf=+f.elements.lf.value,s=+f.elements.sump.value,b=f.elements.bk.checked;
+      var drain=Math.max(3500,lf*95),sump=s*1250,bk=b?1900:0;
+      document.getElementById('fx-lf').textContent=lf+' ft';
+      document.getElementById('fx-total').textContent=money(drain+sump+bk);
+      document.getElementById('fx-d1').textContent=money(drain)+(lf*95<3500?' (minimum)':'');
+      document.getElementById('fx-d2').textContent=s?money(sump):'Not added';
+      document.getElementById('fx-d3').textContent=b?money(bk):'Not added';
+    };
+    f.addEventListener('input',calc);f.addEventListener('change',calc);calc();
+  }
+  var pb=document.getElementById('fx-printbtn');
+  if(pb){pb.addEventListener('click',function(){document.documentElement.classList.add('fx-print');window.print();});
+    window.addEventListener('afterprint',function(){document.documentElement.classList.remove('fx-print');});}
+})();
+
+(function(){
+  var f=document.getElementById('fx-pay');
+  if(f){
+    var money=function(n){return '$'+Math.round(n).toLocaleString('en-US');};
+    var calc=function(){
+      var P=+f.elements.amt.value,n=+f.elements.term.value,apr=+f.elements.apr.value,r=apr/1200;
+      var pay=r?P*r/(1-Math.pow(1+r,-n)):P/n;
+      document.getElementById('fx-amt').textContent=money(P);
+      document.getElementById('fx-apr').textContent=apr.toFixed(1)+'%';
+      document.getElementById('fx-pm').textContent=money(pay);
+      document.getElementById('fx-p1').textContent=money(P);
+      document.getElementById('fx-p2').textContent=n+' months';
+      document.getElementById('fx-p3').textContent=apr.toFixed(1)+'%';
+      document.getElementById('fx-p4').textContent=money(pay*n);
+    };
+    f.addEventListener('input',calc);f.addEventListener('change',calc);calc();
+  }
+  var tb=document.querySelectorAll('[data-town]');
+  tb.forEach(function(b){b.addEventListener('click',function(){
+    tb.forEach(function(x){x.setAttribute('aria-pressed',x===b?'true':'false');});
+    document.querySelectorAll('.fx-towns').forEach(function(p){p.classList.toggle('on',p.id==='town-'+b.getAttribute('data-town'));});
+  });});
+})();
+</script>
 </body>
 </html>
