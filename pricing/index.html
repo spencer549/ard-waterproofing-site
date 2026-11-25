@@ -1829,6 +1829,36 @@ body .design .sfoot{background:#000c22;border-top:3px solid var(--cyan);box-shad
 @media (min-width:641px) and (max-width:1060px){#design-c .cmeta{grid-template-columns:repeat(2,minmax(0,1fr))}}
 </style>
 <!-- cu1125 -->
+<style id="at1125">
+/* AI-tells removal 2026-11-25: tokens first, so every component follows */
+html body .design,html body #design-a,html body #design-b,html body #design-c{--r-lg:12px;--r-pill:8px;--t-xs:14px}
+/* hero accent word: readable on the blue photo wash */
+html body .design h1 em{color:#BFE9FF}
+/* caps sublabels -> sentence case */
+html body .design h5,html body .design .wstats .l,html body .design .lstep .w,html body .design .flabel,
+html body .design .pwhen,html body .design .cnt,html body .design .ck,html body .design .vlab,html body .design .sl,
+html body .design .rg,html body .design .qcard label{text-transform:none!important;letter-spacing:0!important}
+html body .design .wstats .l,html body .design .lstep .w,html body .design .flabel,html body .design .pwhen,
+html body .design .cnt,html body .design .ck,html body .design .vlab,html body .design .sl{font-size:15px!important}
+/* tiny type up to a readable floor */
+html body .design .stars{font-size:15px}
+html body .design .dim{font-size:15px!important}
+html body #design-c .fx-mk text{font-size:14px}
+/* gradient band -> flat navy */
+html body #design-c .mcta{background:var(--navy-900)}
+/* see-through panels -> the flat colour they resolved to */
+html body #design-c .pcard{background:#143057}
+html body #design-c .hvfoot{background:#122D55}
+/* tag rows and filters are not buttons: tags get tighter, town tiles lose the box, filters become tabs */
+html body .design .chip{padding:5px 9px}
+html body #design-c .mtowns a,html body #design-c .tpills a,html body #design-c .tpills>span{background:transparent;border-top:0;border-right:0;border-radius:0;box-shadow:none}
+html body #design-c .gfilt button{background:none;border:0;border-bottom:2px solid transparent;border-radius:0;padding:8px 4px;margin:0 8px}
+html body #design-c .gfilt button[aria-pressed="true"]{background:none;color:var(--blue);border-bottom-color:var(--blue)}
+/* a heading after a tag row or a table starts a new block */
+html body .design .chips+h2,html body .design .chips+h3,html body .design div:has(>table)+h2,html body .design table+h2{margin-top:64px!important}
+html body .design .stats .l,html body .design .fin .l,html body .design .afact .l{text-transform:none!important;letter-spacing:0!important;font-size:15px!important}
+</style>
+<!-- at1125 -->
 </head>
 <body>
 <div class="design show" id="design-c"><div class="promo"><div class="wrap">
@@ -1838,9 +1868,9 @@ body .design .sfoot{background:#000c22;border-top:3px solid var(--cyan);box-shad
 </div></div><header class="hd"><div class="wrap hd-row">
   <a class="hd-logo" href="../"><img src="../video/ard-logo-2026-dark.png" alt="ARD Waterproofing"></a>
   <ul class="hd-nav">
-    <li class="has-mega"><a href="../services/">Our Services <span aria-hidden="true">&#9662;</span></a> <div class="mega"><div class="mcol"><h5>Drainage &amp; Waterproofing</h5><ul><li><a href="../basement-waterproofing/">Basement Waterproofing</a></li><li><a href="../foundation-waterproofing/">Foundation Waterproofing</a></li><li><a href="../interior-french-drains/">Interior French Drains</a></li><li><a href="../exterior-french-drains/">Exterior French Drains</a></li><li><a href="../sump-pumps/">Sump Pumps &amp; Battery Backup</a></li><li><a href="../underground-discharge-downspout-drainage/">Underground Discharge &amp; Downspouts<i class="new">New</i></a></li><li><a href="../channel-drains/">Driveway &amp; Garage Channel Drains</a></li><li><a href="../drywells-cultec-systems/">Drywells &amp; CULTEC Systems<i class="new">New</i></a></li><li><a href="../foundation-crack-injection/">Foundation Crack Injection<i class="new">New</i></a></li><li><a href="../crawl-space-encapsulation/">Crawlspace Encapsulation</a></li><li><a href="../window-wells-egress-windows/">Window Wells &amp; Egress Windows</a></li></ul></div><div class="mcol"><h5>Exterior &amp; Restoration</h5><ul><li><a href="../grading/">Grading<i class="new">New</i></a></li><li><a href="../retaining-walls/">Retaining Walls</a></li><li><a href="../patios-pavers/">Patios &amp; Pavers</a></li><li><a href="../walkways/">Driveway &amp; Walkway</a></li><li><a href="../masonry/">Masonry &amp; Concrete</a></li><li><a href="../finished-basement-restoration/">Finished-Basement Restoration<i class="new">New</i></a></li></ul></div><a class="megafoot" href="../services/">View all services &rarr;</a></div></li>
+    <li class="has-mega"><a href="../services/">Our Services <span aria-hidden="true">&#9662;</span></a> <div class="mega"><div class="mcol"><h5>Drainage &amp; Waterproofing</h5><ul><li><a href="../basement-waterproofing/">Basement Waterproofing</a></li><li><a href="../foundation-waterproofing/">Foundation Waterproofing</a></li><li><a href="../interior-french-drains/">Interior French Drains</a></li><li><a href="../exterior-french-drains/">Exterior French Drains</a></li><li><a href="../sump-pumps/">Sump Pumps &amp; Battery Backup</a></li><li><a href="../underground-discharge-downspout-drainage/">Underground Discharge &amp; Downspouts<i class="new">New</i></a></li><li><a href="../channel-drains/">Driveway &amp; Garage Channel Drains</a></li><li><a href="../drywells-cultec-systems/">Drywells &amp; CULTEC Systems<i class="new">New</i></a></li><li><a href="../foundation-crack-injection/">Foundation Crack Injection<i class="new">New</i></a></li><li><a href="../crawl-space-encapsulation/">Crawlspace Encapsulation</a></li><li><a href="../window-wells-egress-windows/">Window Wells &amp; Egress Windows</a></li></ul></div><div class="mcol"><h5>Exterior &amp; Restoration</h5><ul><li><a href="../grading/">Grading<i class="new">New</i></a></li><li><a href="../retaining-walls/">Retaining Walls</a></li><li><a href="../patios-pavers/">Patios &amp; Pavers</a></li><li><a href="../walkways/">Driveway &amp; Walkway</a></li><li><a href="../masonry/">Masonry &amp; Concrete</a></li><li><a href="../finished-basement-restoration/">Finished-Basement Restoration<i class="new">New</i></a></li></ul></div><a class="megafoot" href="../services/">View all services</a></div></li>
     <li class="has-mega"><a href="../areas-we-serve/">Areas We Serve <span aria-hidden="true">&#9662;</span></a>
-      <div class="mega"><div class="mcol"><h5>Essex, Passaic, Union, and Morris Counties</h5><ul class="acols"><li><a href="../west-caldwell/">West Caldwell</a></li><li><a href="../montclair/">Montclair</a></li><li><a href="../north-caldwell/">North Caldwell</a></li><li><a href="../short-hills/">Short Hills</a></li><li><a href="../south-orange/">South Orange</a></li><li><a href="../summit/">Summit</a></li><li><a href="../verona/">Verona</a></li><li><a href="../wayne/">Wayne</a></li><li><a href="../west-orange/">West Orange</a></li></ul></div><a class="megafoot" href="../areas-we-serve/">All service areas &rarr;</a></div></li>
+      <div class="mega"><div class="mcol"><h5>Essex, Passaic, Union, and Morris Counties</h5><ul class="acols"><li><a href="../west-caldwell/">West Caldwell</a></li><li><a href="../montclair/">Montclair</a></li><li><a href="../north-caldwell/">North Caldwell</a></li><li><a href="../short-hills/">Short Hills</a></li><li><a href="../south-orange/">South Orange</a></li><li><a href="../summit/">Summit</a></li><li><a href="../verona/">Verona</a></li><li><a href="../wayne/">Wayne</a></li><li><a href="../west-orange/">West Orange</a></li></ul></div><a class="megafoot" href="../areas-we-serve/">All service areas</a></div></li>
     <li class="has-mega"><a href="../pricing/">Pricing <span aria-hidden="true">&#9662;</span></a> <div class="mega fx-m3"><div class="mcol"><h5>Pricing &amp; Warranty</h5><ul><li><a href="../pricing/">Price Guide</a></li><li><a href="../pricing/#estimator">Budget Estimator</a></li><li><a href="../warranty/">Warranty</a></li><li><a href="../financing/">Financing</a></li><li><a href="../financing/#payment">Payment Estimator</a></li></ul></div></div></li> <li><a href="../gallery/">Gallery</a></li><li><a href="../reviews/">Reviews</a></li><li><a href="../blog/">Blog</a></li><li><a href="../about/">About</a></li><li><a href="../contact/">Contact</a></li>
     <li><a class="hd-tel" href="tel:+19176918411">(917) 691-8411</a></li>
     <li><a class="btn btn-p" href="#estimate">Request A Free Estimate</a></li>
@@ -1866,7 +1896,6 @@ body .design .sfoot{background:#000c22;border-top:3px solid var(--cyan);box-shad
     <div class="hmeta"><span class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</span> 5.0 <span class="dim">180 Google reviews</span><span class="dim">NJ HIC #13VH12468700</span></div>
   </div>
   <div id="estimate" class="qcard rv">
-  <div class="qcard-top"><span>Estimate request</span><span>No obligation</span></div>
   <div class="qcard-body"><h3>Get your free estimate</h3><p class="fsub">Same business day confirmation. No subcontractors.</p>
 <form class="qform" onsubmit="return false">
   <input class="field" type="text" placeholder="Full name" aria-label="Full name">
@@ -1886,11 +1915,11 @@ body .design .sfoot{background:#000c22;border-top:3px solid var(--cyan);box-shad
   <span class="cred rv"><span class="cmark"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M12 2.5l7.5 3v6c0 4.7-3.1 8.9-7.5 10.2C7.6 20.4 4.5 16.2 4.5 11.5v-6l7.5-3z" stroke="#062A5C" stroke-width="1.7" stroke-linejoin="round"/><path d="M8.6 12.2l2.4 2.4 4.4-4.8" stroke="#0068C0" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"/></svg></span><span><b>Lifetime warranty</b><span>Transferable to one new owner</span></span></span>
   <span class="cred rv"><span class="cmark"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M3.4 10.6L12 3.6l8.6 7v9.8H3.4v-9.8z" stroke="#062A5C" stroke-width="1.7" stroke-linejoin="round"/><path d="M9.6 20.4v-6h4.8v6" stroke="#0068C0" stroke-width="1.7" stroke-linejoin="round"/></svg></span><span><b>Founded 2015</b><span>20+ years experience</span></span></span>
 </div></section><section class="sec"><div class="wrap"><div class="fx-costg">
-  <div class="rv"><div class="shead"><p class="eyebrow">Planning ranges</p><h2>What waterproofing <em>costs with ARD</em></h2>
+  <div class="rv"><div class="shead"><h2>What waterproofing <em>costs with ARD</em></h2>
   <p class="lede">These are starting points for budgeting. Every job is priced in writing after we walk the property.</p></div><p class="fx-draft">Draft figures proposed by ARD, shown for review. Not final pricing.</p><ul class="fx-ledger"><li><span class="w">Interior French drain system<small>Per linear foot of drain. Sump system and battery backup are priced as their own lines</small></span><span class="p"><!-- PENDING-CONFIRM: client to verify; ARD's proposed figure shown --><u>from</u>$95<small>per linear foot, $3,500 project minimum</small></span></li><li><span class="w">New standalone sump pit and pump<small>Where no drain is being installed</small></span><span class="p"><!-- PENDING-CONFIRM: client to verify; ARD's proposed figure shown --><u>from about</u>$1,850</span></li><li><span class="w">Sump system, with an interior drain<small>Added to a French drain installation</small></span><span class="p"><!-- PENDING-CONFIRM: client to verify; ARD's proposed figure shown --><u>about</u>$1,250</span></li><li><span class="w">Battery-backup system<small>With a French drain installation</small></span><span class="p"><!-- PENDING-CONFIRM: client to verify; ARD's proposed figure shown --><u>about</u>$1,900</span></li></ul></div>
   <div class="rv"><h3 style="font-size:var(--t-xl)">What moves the final price</h3><ul class="fx-factors" style="columns:1"><li><b>Footage</b><span>The linear feet of drain the basement needs.</span></li><li><b>Demolition</b><span>Finished walls or flooring that have to come out first.</span></li><li><b>Access</b><span>How easily the crew and materials reach the work area.</span></li><li><b>Sump systems</b><span>How many basins and pumps the layout calls for.</span></li><li><b>Discharge routing</b><span>Where the water goes once it leaves the house.</span></li><li><b>Electrical work</b><span>Power for the pump, where an outlet is needed.</span></li><li><b>Restoration</b><span>What gets put back after the drain is in.</span></li><li><b>Permits</b><span>Where the town requires them.</span></li></ul></div>
 </div></div></section><section class="sec sec-mist" id="estimator"><div class="wrap">
-  <div class="shead shead-c"><p class="eyebrow">Budget estimator</p><h2>A starting figure for <em>your basement</em></h2>
+  <div class="shead shead-c"><h2>A starting figure for <em>your basement</em></h2>
   <p class="lede">Move the sliders to match your space. The figure uses the price guide above.</p></div>
   <div class="fx-estg"><form class="fx-ctl rv" id="fx-est" onsubmit="return false">
     <div><label for="fx-lfi">Length of drain needed <output id="fx-lf">120 ft</output></label>
@@ -1907,8 +1936,7 @@ body .design .sfoot{background:#000c22;border-top:3px solid var(--cyan);box-shad
     <p class="fine">A planning figure from ARD's draft price guide, not a quote. Demolition, access, discharge routing, electrical work, restoration and permits can change it.</p>
     <a class="btn btn-p" href="#estimate">Request A Free Estimate</a></div></div>
 </div></section><section class="sec on-dark fx-sys" id="system"><div class="wrap">
-  <div class="shead shead-c"><p class="eyebrow">Interior French drain, part by part</p>
-  <h2>What your <em>system includes</em></h2>
+  <div class="shead shead-c"><h2>What your <em>system includes</em></h2>
   <p class="lede">A price only means something when you know what the system includes. These are the parts of an ARD interior French drain system.</p></div>
   <div class="fx-sysg"><div class="fx-dia rv"><svg viewBox="0 92 640 428" role="img" aria-label="Cross-section of an interior French drain system: drain at the footing, sump basin and discharge line to the yard">
 <rect x="0" y="170" width="150" height="350" fill="#0B2550"/><rect x="150" y="394" width="490" height="126" fill="#0B2550"/>
@@ -1939,13 +1967,13 @@ body .design .sfoot{background:#000c22;border-top:3px solid var(--cyan);box-shad
 </svg></div><ol class="fx-parts rv"><li><button type="button" class="fx-part" data-part="1" aria-pressed="false"><span class="n">1</span><span><b>Concrete cutting and replacement</b><span class="d">The slab is cut along the wall, then re-poured and finished once the drain is in.</span></span></button></li><li><button type="button" class="fx-part" data-part="2" aria-pressed="false"><span class="n">2</span><span><b>Proper trench and clean stone</b><span class="d">A trench at the footing, filled with clean stone so water can reach the pipe.</span></span></button></li><li><button type="button" class="fx-part" data-part="3" aria-pressed="false"><span class="n">3</span><span><b>Four-inch rigid drainage pipe</b><span class="d">Rigid pipe that carries the collected water to the sump.</span></span></button></li><li><button type="button" class="fx-part" data-part="4" aria-pressed="false"><span class="n">4</span><span><b>Weep holes in every applicable hollow-block cell</b><span class="d">Drilled low in the block so water held inside the wall drains into the system.</span></span></button></li><li><button type="button" class="fx-part" data-part="5" aria-pressed="false"><span class="n">5</span><span><b>Drain board about one foot up the wall</b><span class="d">Carries wall seepage down behind the new concrete and into the stone.</span></span></button></li><li><button type="button" class="fx-part" data-part="6" aria-pressed="false"><span class="n">6</span><span><b>Sealed sump basin and Zoeller pump</b><span class="d">A lidded basin that collects the water, with a Zoeller pump to move it out.</span></span></button></li><li><button type="button" class="fx-part" data-part="7" aria-pressed="false"><span class="n">7</span><span><b>Clear-union quiet check valve</b><span class="d">Stops pumped water from dropping back into the basin.</span></span></button></li><li><button type="button" class="fx-part" data-part="8" aria-pressed="false"><span class="n">8</span><span><b>Properly routed discharge line</b><span class="d">Carries the water outside and away from the foundation.</span></span></button></li><li><button type="button" class="fx-part" data-part="9" aria-pressed="false"><span class="n">9</span><span><b>Freeze Relief protection</b><span class="d">Gives water a way out if the outdoor line freezes or clogs.</span></span></button></li><li><button type="button" class="fx-part" data-part="10" aria-pressed="false"><span class="n">10</span><span><b>Dual-pump battery backup<i>Optional</i></b><span class="d">A second pump on battery power for outages.</span></span></button></li></ol>
   <div class="fx-sysfoot"><p>Hold any other quote against the same list. If a part is missing, ask whether it is included or priced separately.</p></div></div>
 </div></section><section class="sec" id="compare"><div class="wrap">
-  <div class="shead shead-c"><p class="eyebrow">Before you sign anything</p><h2>A low per-foot number can <em>leave things out</em></h2>
+  <div class="shead shead-c"><h2>A low per-foot number can <em>leave things out</em></h2>
   <p class="lede">Two quotes for the same basement can describe different jobs. Ask every contractor the same questions, ARD included.</p></div>
   <div class="fx-sheet rv"><header><h3>How to compare waterproofing quotes</h3><span>ARD Waterproofing, (917) 691-8411</span></header>
     <h4>What the price includes</h4><ul><li><span><b>Sump basin and pump</b>Is the sump system in the per-foot price, or a separate line?</span></li><li><span><b>Discharge line</b>Where does the water go, and is that routing included?</span></li><li><span><b>Battery backup</b>Is a backup pump included, optional or not offered?</span></li><li><span><b>Wall drainage</b>Does the system collect water from the wall and block cells, or only under the floor?</span></li><li><span><b>Concrete replacement</b>Is re-pouring the floor part of the price?</span></li><li><span><b>Permits</b>Who pulls permits where the town requires them?</span></li><li><span><b>Restoration</b>What happens to finished walls, flooring or landscaping the work disturbs?</span></li></ul><h4>What the warranty covers</h4><ul><li><span><b>Length</b>Is the warranty five years, 25 years or lifetime?</span></li><li><span><b>Coverage</b>Does it cover the drain system or only selected areas?</span></li><li><span><b>Transfer</b>Is it transferable to the next owner?</span></li><li><span><b>Equipment</b>Are pumps and battery systems excluded?</span></li><li><span><b>Fees</b>Are annual service fees required to keep it valid?</span></li></ul></div>
   <div class="fx-sheetfoot"><a class="btn btn-g" href="../downloads/how-to-compare-waterproofing-quotes.pdf" download>Download the checklist (PDF)</a></div>
 </div></section><section class="sec on-dark" style="background:var(--navy-900)"><div class="wrap"><div class="fx-acct">
-  <div class="shead rv"><p class="eyebrow">Who does the work</p><h2>One <em>accountable</em> contractor</h2>
+  <div class="shead rv"><h2>One <em>accountable</em> contractor</h2>
   <p class="lede">ARD prices the complete scope in writing, so you can see what the number covers.</p></div>
   <ul class="rv"><li>Locally owned New Jersey company<small>Based in West Caldwell</small></li>
   <li>Direct owner involvement<small>In-house crews, no subcontractors, owner involved in every job</small></li>
@@ -1954,9 +1982,9 @@ body .design .sfoot{background:#000c22;border-top:3px solid var(--cyan);box-shad
   <li>Drainage through restoration<small>Sump systems, exterior water management, masonry and concrete</small></li></ul>
 </div></div></section><section class="fx-fin"><div class="wrap"><div><h2>Financing through <em>Wisetack</em></h2><p>Prequalify with Wisetack to see monthly-payment options. Financing is subject to lender approval, and not every customer will qualify for every plan.</p></div>
   <a class="btn btn-g" href="../financing/">See financing options</a></div></section><section class="sec on-dark mcta"><div class="wrap">
-  <p class="eyebrow">Start with a free inspection</p><h2>Get your basement priced <em>in writing</em></h2>
+  <h2>Get your basement priced <em>in writing</em></h2>
   <p class="lede">We walk the property, find where the water is actually coming from, and leave you a written price before any work starts.</p>
-  <div class="ctarow"><a class="btn btn-p btn-lg" href="#estimate">Request A Free Estimate</a> <a class="btn btn-o btn-lg" href="tel:+19176918411">Call Us Now</a></div>
+  <div class="ctarow"><a class="btn btn-p btn-lg" href="#estimate">Request A Free Estimate</a> </div>
   <small>Free estimate, no obligation. Call or text, open 24 hours.</small>
 </div></section></div></main>
 <footer class="sfoot"><div class="wrap">

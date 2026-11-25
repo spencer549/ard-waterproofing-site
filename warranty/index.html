@@ -1829,6 +1829,36 @@ body .design .sfoot{background:#000c22;border-top:3px solid var(--cyan);box-shad
 @media (min-width:641px) and (max-width:1060px){#design-c .cmeta{grid-template-columns:repeat(2,minmax(0,1fr))}}
 </style>
 <!-- cu1125 -->
+<style id="at1125">
+/* AI-tells removal 2026-11-25: tokens first, so every component follows */
+html body .design,html body #design-a,html body #design-b,html body #design-c{--r-lg:12px;--r-pill:8px;--t-xs:14px}
+/* hero accent word: readable on the blue photo wash */
+html body .design h1 em{color:#BFE9FF}
+/* caps sublabels -> sentence case */
+html body .design h5,html body .design .wstats .l,html body .design .lstep .w,html body .design .flabel,
+html body .design .pwhen,html body .design .cnt,html body .design .ck,html body .design .vlab,html body .design .sl,
+html body .design .rg,html body .design .qcard label{text-transform:none!important;letter-spacing:0!important}
+html body .design .wstats .l,html body .design .lstep .w,html body .design .flabel,html body .design .pwhen,
+html body .design .cnt,html body .design .ck,html body .design .vlab,html body .design .sl{font-size:15px!important}
+/* tiny type up to a readable floor */
+html body .design .stars{font-size:15px}
+html body .design .dim{font-size:15px!important}
+html body #design-c .fx-mk text{font-size:14px}
+/* gradient band -> flat navy */
+html body #design-c .mcta{background:var(--navy-900)}
+/* see-through panels -> the flat colour they resolved to */
+html body #design-c .pcard{background:#143057}
+html body #design-c .hvfoot{background:#122D55}
+/* tag rows and filters are not buttons: tags get tighter, town tiles lose the box, filters become tabs */
+html body .design .chip{padding:5px 9px}
+html body #design-c .mtowns a,html body #design-c .tpills a,html body #design-c .tpills>span{background:transparent;border-top:0;border-right:0;border-radius:0;box-shadow:none}
+html body #design-c .gfilt button{background:none;border:0;border-bottom:2px solid transparent;border-radius:0;padding:8px 4px;margin:0 8px}
+html body #design-c .gfilt button[aria-pressed="true"]{background:none;color:var(--blue);border-bottom-color:var(--blue)}
+/* a heading after a tag row or a table starts a new block */
+html body .design .chips+h2,html body .design .chips+h3,html body .design div:has(>table)+h2,html body .design table+h2{margin-top:64px!important}
+html body .design .stats .l,html body .design .fin .l,html body .design .afact .l{text-transform:none!important;letter-spacing:0!important;font-size:15px!important}
+</style>
+<!-- at1125 -->
 </head>
 <body>
 <div class="design show" id="design-c"><div class="promo"><div class="wrap">
@@ -1838,9 +1868,9 @@ body .design .sfoot{background:#000c22;border-top:3px solid var(--cyan);box-shad
 </div></div><header class="hd"><div class="wrap hd-row">
   <a class="hd-logo" href="../"><img src="../video/ard-logo-2026-dark.png" alt="ARD Waterproofing"></a>
   <ul class="hd-nav">
-    <li class="has-mega"><a href="../services/">Our Services <span aria-hidden="true">&#9662;</span></a> <div class="mega"><div class="mcol"><h5>Drainage &amp; Waterproofing</h5><ul><li><a href="../basement-waterproofing/">Basement Waterproofing</a></li><li><a href="../foundation-waterproofing/">Foundation Waterproofing</a></li><li><a href="../interior-french-drains/">Interior French Drains</a></li><li><a href="../exterior-french-drains/">Exterior French Drains</a></li><li><a href="../sump-pumps/">Sump Pumps &amp; Battery Backup</a></li><li><a href="../underground-discharge-downspout-drainage/">Underground Discharge &amp; Downspouts<i class="new">New</i></a></li><li><a href="../channel-drains/">Driveway &amp; Garage Channel Drains</a></li><li><a href="../drywells-cultec-systems/">Drywells &amp; CULTEC Systems<i class="new">New</i></a></li><li><a href="../foundation-crack-injection/">Foundation Crack Injection<i class="new">New</i></a></li><li><a href="../crawl-space-encapsulation/">Crawlspace Encapsulation</a></li><li><a href="../window-wells-egress-windows/">Window Wells &amp; Egress Windows</a></li></ul></div><div class="mcol"><h5>Exterior &amp; Restoration</h5><ul><li><a href="../grading/">Grading<i class="new">New</i></a></li><li><a href="../retaining-walls/">Retaining Walls</a></li><li><a href="../patios-pavers/">Patios &amp; Pavers</a></li><li><a href="../walkways/">Driveway &amp; Walkway</a></li><li><a href="../masonry/">Masonry &amp; Concrete</a></li><li><a href="../finished-basement-restoration/">Finished-Basement Restoration<i class="new">New</i></a></li></ul></div><a class="megafoot" href="../services/">View all services &rarr;</a></div></li>
+    <li class="has-mega"><a href="../services/">Our Services <span aria-hidden="true">&#9662;</span></a> <div class="mega"><div class="mcol"><h5>Drainage &amp; Waterproofing</h5><ul><li><a href="../basement-waterproofing/">Basement Waterproofing</a></li><li><a href="../foundation-waterproofing/">Foundation Waterproofing</a></li><li><a href="../interior-french-drains/">Interior French Drains</a></li><li><a href="../exterior-french-drains/">Exterior French Drains</a></li><li><a href="../sump-pumps/">Sump Pumps &amp; Battery Backup</a></li><li><a href="../underground-discharge-downspout-drainage/">Underground Discharge &amp; Downspouts<i class="new">New</i></a></li><li><a href="../channel-drains/">Driveway &amp; Garage Channel Drains</a></li><li><a href="../drywells-cultec-systems/">Drywells &amp; CULTEC Systems<i class="new">New</i></a></li><li><a href="../foundation-crack-injection/">Foundation Crack Injection<i class="new">New</i></a></li><li><a href="../crawl-space-encapsulation/">Crawlspace Encapsulation</a></li><li><a href="../window-wells-egress-windows/">Window Wells &amp; Egress Windows</a></li></ul></div><div class="mcol"><h5>Exterior &amp; Restoration</h5><ul><li><a href="../grading/">Grading<i class="new">New</i></a></li><li><a href="../retaining-walls/">Retaining Walls</a></li><li><a href="../patios-pavers/">Patios &amp; Pavers</a></li><li><a href="../walkways/">Driveway &amp; Walkway</a></li><li><a href="../masonry/">Masonry &amp; Concrete</a></li><li><a href="../finished-basement-restoration/">Finished-Basement Restoration<i class="new">New</i></a></li></ul></div><a class="megafoot" href="../services/">View all services</a></div></li>
     <li class="has-mega"><a href="../areas-we-serve/">Areas We Serve <span aria-hidden="true">&#9662;</span></a>
-      <div class="mega"><div class="mcol"><h5>Essex, Passaic, Union, and Morris Counties</h5><ul class="acols"><li><a href="../west-caldwell/">West Caldwell</a></li><li><a href="../montclair/">Montclair</a></li><li><a href="../north-caldwell/">North Caldwell</a></li><li><a href="../short-hills/">Short Hills</a></li><li><a href="../south-orange/">South Orange</a></li><li><a href="../summit/">Summit</a></li><li><a href="../verona/">Verona</a></li><li><a href="../wayne/">Wayne</a></li><li><a href="../west-orange/">West Orange</a></li></ul></div><a class="megafoot" href="../areas-we-serve/">All service areas &rarr;</a></div></li>
+      <div class="mega"><div class="mcol"><h5>Essex, Passaic, Union, and Morris Counties</h5><ul class="acols"><li><a href="../west-caldwell/">West Caldwell</a></li><li><a href="../montclair/">Montclair</a></li><li><a href="../north-caldwell/">North Caldwell</a></li><li><a href="../short-hills/">Short Hills</a></li><li><a href="../south-orange/">South Orange</a></li><li><a href="../summit/">Summit</a></li><li><a href="../verona/">Verona</a></li><li><a href="../wayne/">Wayne</a></li><li><a href="../west-orange/">West Orange</a></li></ul></div><a class="megafoot" href="../areas-we-serve/">All service areas</a></div></li>
     <li class="has-mega"><a href="../pricing/">Pricing <span aria-hidden="true">&#9662;</span></a> <div class="mega fx-m3"><div class="mcol"><h5>Pricing &amp; Warranty</h5><ul><li><a href="../pricing/">Price Guide</a></li><li><a href="../pricing/#estimator">Budget Estimator</a></li><li><a href="../warranty/">Warranty</a></li><li><a href="../financing/">Financing</a></li><li><a href="../financing/#payment">Payment Estimator</a></li></ul></div></div></li> <li><a href="../gallery/">Gallery</a></li><li><a href="../reviews/">Reviews</a></li><li><a href="../blog/">Blog</a></li><li><a href="../about/">About</a></li><li><a href="../contact/">Contact</a></li>
     <li><a class="hd-tel" href="tel:+19176918411">(917) 691-8411</a></li>
     <li><a class="btn btn-p" href="#estimate">Request A Free Estimate</a></li>
@@ -1866,7 +1896,6 @@ body .design .sfoot{background:#000c22;border-top:3px solid var(--cyan);box-shad
     <div class="hmeta"><span class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</span> 5.0 <span class="dim">180 Google reviews</span><span class="dim">NJ HIC #13VH12468700</span></div>
   </div>
   <div id="estimate" class="qcard rv">
-  <div class="qcard-top"><span>Estimate request</span><span>No obligation</span></div>
   <div class="qcard-body"><h3>Get your free estimate</h3><p class="fsub">Same business day confirmation. No subcontractors.</p>
 <form class="qform" onsubmit="return false">
   <input class="field" type="text" placeholder="Full name" aria-label="Full name">
@@ -1886,18 +1915,18 @@ body .design .sfoot{background:#000c22;border-top:3px solid var(--cyan);box-shad
   <span class="cred rv"><span class="cmark"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M12 2.5l7.5 3v6c0 4.7-3.1 8.9-7.5 10.2C7.6 20.4 4.5 16.2 4.5 11.5v-6l7.5-3z" stroke="#062A5C" stroke-width="1.7" stroke-linejoin="round"/><path d="M8.6 12.2l2.4 2.4 4.4-4.8" stroke="#0068C0" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"/></svg></span><span><b>Lifetime warranty</b><span>Transferable to one new owner</span></span></span>
   <span class="cred rv"><span class="cmark"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M3.4 10.6L12 3.6l8.6 7v9.8H3.4v-9.8z" stroke="#062A5C" stroke-width="1.7" stroke-linejoin="round"/><path d="M9.6 20.4v-6h4.8v6" stroke="#0068C0" stroke-width="1.7" stroke-linejoin="round"/></svg></span><span><b>Founded 2015</b><span>20+ years experience</span></span></span>
 </div></section><section class="sec"><div class="wrap"><div class="fx-wg">
-  <div class="rv"><p class="eyebrow">The warranty, in one sentence</p><p class="fx-stmt">ARD’s warranty on interior drainage systems is a lifetime warranty to the structure, transferable to one new owner. Pumps and mechanical equipment have separate coverage.</p></div>
+  <div class="rv"><p class="fx-stmt">ARD’s warranty on interior drainage systems is a lifetime warranty to the structure, transferable to one new owner. Pumps and mechanical equipment have separate coverage.</p></div>
   <div class="fx-cov rv"><div class="main"><h3>Interior French-drain workmanship</h3><p>Lifetime of the structure on interior drainage systems. Transferable to one new owner.</p></div>
   <div><h3>Pumps and mechanical equipment</h3><p>Covered separately. Terms: <em class="fx-tbc">To be confirmed by ARD</em></p></div></div>
 </div></div></section><section class="sec sec-mist"><div class="wrap">
-  <div class="shead shead-c"><p class="eyebrow">Compare warranties</p><h2>Five questions for <em>any waterproofing warranty</em></h2>
+  <div class="shead shead-c"><h2>Five questions for <em>any waterproofing warranty</em></h2>
   <p class="lede">"Lifetime" means different things on different contracts. Ask each contractor to answer these in writing.</p></div>
   <table class="fx-qa rv"><thead><tr><th scope="col">Ask every contractor</th><th scope="col">ARD's answer</th></tr></thead><tbody><tr><th scope="row">Is the warranty five years, 25 years or lifetime?</th><td>Lifetime of the structure, on interior drainage systems.</td></tr><tr><th scope="row">Does it cover the drain system or only selected areas?</th><td><em class="fx-tbc">To be confirmed by ARD</em></td></tr><tr><th scope="row">Is it transferable?</th><td>Yes, once.</td></tr><tr><th scope="row">Are pumps and battery systems excluded?</th><td>Pumps and mechanical equipment have separate coverage.</td></tr><tr><th scope="row">Are annual service fees required to keep it valid?</th><td><em class="fx-tbc">To be confirmed by ARD</em></td></tr></tbody></table>
 </div></section><section class="fx-fin"><div class="wrap"><div><h2>Financing through <em>Wisetack</em></h2><p>Prequalify with Wisetack to see monthly-payment options. Financing is subject to lender approval, and not every customer will qualify for every plan.</p></div>
   <a class="btn btn-g" href="../financing/">See financing options</a></div></section><section class="sec on-dark mcta"><div class="wrap">
-  <p class="eyebrow">Start with a free inspection</p><h2>Get the scope and the warranty <em>in writing</em></h2>
+  <h2>Get the scope and the warranty <em>in writing</em></h2>
   <p class="lede">We walk the property, find where the water is actually coming from, and leave you a written price before any work starts.</p>
-  <div class="ctarow"><a class="btn btn-p btn-lg" href="#estimate">Request A Free Estimate</a> <a class="btn btn-o btn-lg" href="tel:+19176918411">Call Us Now</a></div>
+  <div class="ctarow"><a class="btn btn-p btn-lg" href="#estimate">Request A Free Estimate</a> </div>
   <small>Free estimate, no obligation. Call or text, open 24 hours.</small>
 </div></section></div></main>
 <footer class="sfoot"><div class="wrap">
